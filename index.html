@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Your Website Header</h1>
+            <div><a href="index.html"><img src="images/logo.png"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('features')">Features</a></li>
+                    <li><a href="#" onclick="scrollToSection('works')">Works</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger-menu">
+                <div class="burger-icon" onclick="toggleMenu()"></div>
+                <div class="mobile-menu">
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('features')">Features</a></li>
+                    <li><a href="#" onclick="scrollToSection('works')">Works</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+        </div>
+    </header>
+    
+    <main>
+        <section class="slider-container">
+
+                <div class="slider-item slider">
+                    <img class="slider-image" src="./images/slider-pic.jpg" alt="Slider image">
+                    <div class="slider-texts">
+                        <h2>Meet Brandi!</h2>
+                        <h3>creative one page template.</h3>
+                        <p>We are a team of professionals</p>
+                    </div>
+                </div>
+    
+                <div class="slider-item slider">
+                    <img class="slider-image" src="./images/pic2.jpg" alt="Slider image">
+                    <div class="slider-texts">
+                        <h2>Hello!</h2>
+                        <h3>welcome to our page!</h3>
+                    </div>
+                </div>
+    
+                <div class="slider-item slider">
+                    <img class="slider-image" src="./images/pic2.jpg" alt="Slider image">
+                    <div class="slider-texts">
+                        <h2>Bye!</h2>
+                        <h3>Thank you!</h3>
+                    </div>
+                </div>
+
+            <div class="slider-dots">
+                <div class="slider-dot" onclick="currentSlide(1)"></div>
+                <div class="slider-dot" onclick="currentSlide(2)"></div>
+                <div class="slider-dot" onclick="currentSlide(3)"></div>
+            </div>
+
+            <div class="slider-arrow-container">
+                <div class="slider-arrow slider-arrow-left" onclick="plusSlides(-1)"></div>
+                <div class="slider-arrow slider-arrow-right" onclick="plusSlides(1)"></div>
+            </div>
+
+        </section>
+        
+        <section class="features" id="features">
+            <h2 class="features-title">Features</h2>
+            <div class="features-list">
+                <div class="features-item">
+                    <h3 class="features-item-title branding">Branding</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+                <div class="features-item">
+                    <h3 class="features-item-title development">Development</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+                <div class="features-item">
+                    <h3 class="features-item-title consulting">Consulting</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+            </div>>
+        </section>
+
+        <section class="works" id="works">
+            <h2 class="work-title">Works</h2>
+            <p class="work-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+            <div class="works-cards">
+                <div class="works-card">
+                    <img src="./images/photo-1.jpg" alt="Card Image">
+                    <div class="works-card-container">
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a>Read more >></a>
+                    </div>
+                </div>
+                <div class="works-card">
+                    <img src="./images/photo-2.jpg" alt="Card Image">
+                    <div class="works-card-container">
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a>Read more >></a>
+                    </div>
+                </div>
+                <div class="works-card">
+                    <img src="./images/photo-3.jpg" alt="Card Image">
+                    <div class="works-card-container">
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a>Read more >></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fun-facts">
+            <h2 class="fun-facts-title">Some fun facts</h2>
+            <div class="fun-facts-list">
+                <div class="fun-facts-item">
+                    <div class="fun-facts-icon clock-icon"></div>
+                    <h3>3200</h3>
+                    <p>hours of work</p>
+                </div>
+                <div class="fun-facts-item">
+                    <div class="fun-facts-icon users-icon"></div>
+                    <h3>120</h3>
+                    <p>satisfied clients</p>
+                </div>
+                <div class="fun-facts-item">
+                    <div class="fun-facts-icon rocket-icon"></div>
+                    <h3>360</h3>
+                    <p>projects delivered</p>
+                </div>
+                <div class="fun-facts-item">
+                    <div class="fun-facts-icon cup-icon"></div>
+                    <h3>42</h3>
+                    <p>awards win</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div><img src="images/logo.png"></div>
+            <p>© 2014 Brandi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        function scrollToSection(section){
+            const featuresSection = document.getElementById(section);
+    
+            if (featuresSection) {
+                featuresSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slider");
+            let dots = document.getElementsByClassName("slider-dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        function toggleMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.style.display === 'block' ? mobileMenu.style.display = 'none' : mobileMenu.style.display = 'block';
+        }
+
+    </script>
+</body>
+</html>
